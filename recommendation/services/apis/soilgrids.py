@@ -30,7 +30,8 @@ def get_soil_data(lat, lon, target_depth="0-5cm"):
         response = requests.get(
             SOILGRIDS_URL,
             params=params,
-            timeout=20
+            timeout=30,
+            headers={"User-Agent": "NUSA-CROP/1.0 (GEMASTIK Project)"}
         )
         response.raise_for_status()
         data = response.json()
