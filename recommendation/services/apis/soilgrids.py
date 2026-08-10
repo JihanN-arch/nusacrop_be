@@ -7,7 +7,7 @@ from ml_lib.soilgrids_adapter import usda_texture_class
 SOILGRIDS_URL = "https://rest.isric.org/soilgrids/v2.0/properties/query"
 
 MAX_RETRIES = 3
-RETRY_DELAYS = [3, 8, 15]
+RETRY_DELAYS = [1, 2, 3]
 
 CACHE_TIMEOUT = 60 * 60 * 24 * 7
 
@@ -86,7 +86,7 @@ def get_soil_data(lat, lon, target_depth="0-5cm"):
             response = requests.get(
                 SOILGRIDS_URL,
                 params=params,
-                timeout=30,
+                timeout=5,
                 headers={
                     "User-Agent": "NUSA-CROP/1.0 (GEMASTIK Project)"
                 }
