@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from pathlib import Path
 import os
 from corsheaders.defaults import default_headers
+import dj_database_url
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -95,14 +96,17 @@ WSGI_APPLICATION = 'nusacrop_backend.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'nusacrop',
-        'USER': 'postgres',
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        default=f"postgresql://postgres:{os.getenv('DB_PASSWORD')}@localhost:5432/nusacrop"
+    )
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'nusacrop',
+    #     'USER': 'postgres',
+    #     'PASSWORD': os.getenv('DB_PASSWORD'),
+    #     'HOST': 'localhost',
+    #     'PORT': '5432',
+    # }
 }
 
 
