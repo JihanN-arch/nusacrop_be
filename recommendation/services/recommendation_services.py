@@ -36,6 +36,7 @@ def get_recommendation(data, anonymous_id):
         curah_hujan=kondisi_lahan["curah_hujan"],
         ph_tanah=kondisi_lahan["ph_tanah"],
         elevasi=kondisi_lahan["elevasi"],
+        ndvi=kondisi_lahan.get("ndvi"),
         suhu=kondisi_lahan["suhu"],
         et0=kondisi_lahan.get("et0"),
         nitrogen=kondisi_lahan.get("nitrogen"),

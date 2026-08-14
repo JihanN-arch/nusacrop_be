@@ -64,7 +64,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3001",
     "http://localhost:3004",
     "https://gemastik-softdev-burhan.vercel.app",
-    "https://nusa-crop-gemastik.vercel.app/",
+    "https://nusa-crop-gemastik.vercel.app",
 ]
 
 from corsheaders.defaults import default_headers

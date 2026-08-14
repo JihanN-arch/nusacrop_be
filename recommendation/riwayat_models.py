@@ -12,26 +12,22 @@ class RiwayatPencarian(models.Model):
 
     musim_target = models.CharField(max_length=50,null=True,blank=True)
 
-
     curah_hujan = models.FloatField(null=True,blank=True)
 
     ph_tanah = models.FloatField(null=True, blank=True)
 
     elevasi = models.FloatField(null = True,blank=True)
-
+    
+    ndvi = models.FloatField(null=True, blank=True)
+    
     suhu = models.FloatField(null=True,blank=True)
-
     et0 = models.FloatField(null=True,blank=True)
 
 
     nitrogen = models.FloatField(null=True,blank=True)
-
     organic_carbon = models.FloatField(null=True,blank=True)
-
     tekstur_tanah = models.JSONField(default=dict)
-
     kesuburan_tanah = models.FloatField(null=True,blank=True)
-
 
     dibuat_pada = models.DateTimeField(auto_now_add=True)
     

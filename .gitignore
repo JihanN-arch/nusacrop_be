@@ -10,3 +10,6 @@ staticfiles/
 .vscode/
 .idea/
 .DS_Store
+
+#gee
+nusa_crop_gee_key.json

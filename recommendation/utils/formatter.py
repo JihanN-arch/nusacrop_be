@@ -29,6 +29,7 @@ def format_recommendation(prediction, kondisi_lahan):
             "id": tanaman.slug,
             "nama": tanaman.nama,
             "nama_latin": tanaman.nama_latin,
+            "jenis_tanaman": tanaman.jenis_tanaman,
             "kesuburan_ideal": syarat["kesuburan"],
             "ph_ideal": f'{syarat["ph"]["min"]} - {syarat["ph"]["max"]}',
             "elevasi_ideal": f'{syarat["elevasi"]["min"]} - {syarat["elevasi"]["max"]} mdpl',
