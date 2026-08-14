@@ -18,14 +18,14 @@ def init_gee():
     
     if key_json_str:
         key_dict = json.loads(key_json_str)
-        service_accrount = key_dict["client_email"]
-        credentials = ee.ServiceAccountCredentials(service_accrount, key_data=key_json_str)
+        service_account = key_dict["client_email"]
+        credentials = ee.ServiceAccountCredentials(service_account, key_data=key_json_str)
     
     #kalo lokal
     else:
-        service_accrount = os.getenv("GEE_SERVICE_ACC_EMAIL")
+        service_account = os.getenv("GEE_SERVICE_ACC_EMAIL")
         key_path = os.getenv("GEE_SERVICE_ACC_KEY_PATH")
-        credentials = ee.ServiceAccountCredentials(service_accrount, key_path)
+        credentials = ee.ServiceAccountCredentials(service_account, key_path)
         
     ee.Initialize(credentials)
     _gee_initialized = True
