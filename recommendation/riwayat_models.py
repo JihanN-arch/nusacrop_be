@@ -5,6 +5,8 @@ class RiwayatPencarian(models.Model):
 
     anonymous_id = models.CharField(max_length=100,db_index=True)
 
+    nama_lokasi = models.CharField(max_length=100, null=True, blank=True)
+    
     lat = models.FloatField()
     lon = models.FloatField()
 

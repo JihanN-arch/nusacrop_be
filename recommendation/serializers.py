@@ -4,11 +4,21 @@ from .riwayat_models import RiwayatRekomendasi, RiwayatPencarian
 class RecommendRequestSerializer(serializers.Serializer):
     lat = serializers.FloatField(min_value=-11, max_value=6)
     lon = serializers.FloatField(min_value=95, max_value=141)
+    
+    nama_lokasi = serializers.CharField(
+        max_length=100,
+        min_length=1,
+        required=True,
+        allow_blank=False,
+        
+    )
+    
     luas_lahan = serializers.FloatField(
         min_value=0,
         required=False,
         allow_null=True,
     )
+    
     musim_target = serializers.ChoiceField(
         choices=["hujan", "kemarau"],
         required=False,
@@ -44,7 +54,13 @@ class RiwayatRekomendasiSerializer(serializers.ModelSerializer):
 
 class RiwayatPencarianSerializer(serializers.ModelSerializer):
     rekomendasi = RiwayatRekomendasiSerializer(many=True, read_only=True)
+    nama_tampilan = serializers.SerializerMethodField()
 
     class Meta:
         model = RiwayatPencarian
         fields = '__all__'
+        
+    def get_nama_tampilan(self, obj):
+        if obj.nama_lokasi:
+            return obj.nama_lokasi
+        return f"Lokasi {obj.lat:.4f}, {obj.lon:.4f}"
