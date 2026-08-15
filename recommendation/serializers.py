@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .riwayat_models import RiwayatRekomendasi, RiwayatPencarian
+from .models.riwayat_models import RiwayatRekomendasi, RiwayatPencarian
 
 class RecommendRequestSerializer(serializers.Serializer):
     lat = serializers.FloatField(min_value=-11, max_value=6)
@@ -11,12 +11,6 @@ class RecommendRequestSerializer(serializers.Serializer):
         required=True,
         allow_blank=False,
         
-    )
-    
-    luas_lahan = serializers.FloatField(
-        min_value=0,
-        required=False,
-        allow_null=True,
     )
     
     musim_target = serializers.ChoiceField(

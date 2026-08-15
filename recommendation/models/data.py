@@ -8,7 +8,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Pangan",
         "umur_panen": "8-12 bulan",
-        "potensi_hasil": "15-20 ton/ha",
+        "produktivitas_tanaman": "15-20 ton/ha",
         "cara_budidaya": """Untuk membudidayakan singkong, langkah pertama adalah memilih batang sehat bermata tunas rapat, memotongnya sepanjang 20 cm,
         lalu menyimpannya di tempat teduh selama 3–4 hari untuk proses penyembuhan bibit. Selanjutnya, tancapkan bibit secara miring dengan mata tunas menghadap ke atas di tanah gembur berpupuk organik dengan jarak tanam 75–100 cm. 
         Lakukan perawatan dengan menjaga kelembapan tanah tanpa membiarkannya tergenang air, dan singkong siap dipanen setelah berumur 8 hingga 12 bulan.""",
@@ -39,7 +39,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Pangan",
         "umur_panen": "70-120 hari",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya jagung diawali dengan memilih benih bersertifikat, lalu menanamnya (2 biji per lubang) di tanah gembur yang telah diberi pupuk dasar dan bedengan. 
         Pemupukan susulan dilakukan tiga tahap pada umur 15, 35, dan 50 HST dengan cara ditimbun tanah lalu disiram. Perawatan tanaman meliputi penyiraman, penyiangan gulma, 
@@ -72,7 +72,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Pangan",
         "umur_panen": "70-95 hari",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya kacang tanah diawali dengan pengolahan tanah secara intensif agar gembur dan bebas gulma, serta pemilihan benih berkualitas tua dan bebas penyakit dengan daya tumbuh tinggi. 
         Penanaman didukung pemupukan berkala untuk menjaga keseimbangan hara tanah, penyiangan gulma sejak fase vegetatif, dan penyiraman yang cukup pada masa-masa kritis seperti perkecambahan, pembungaan, dan pengisian polong. 
@@ -104,7 +104,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Hortikultura",
         "umur_panen": "60-90 hari",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya terong diawali dengan merendam benih hibrida dalam larutan pupuk organik untuk memecah dormansi, lalu menyemainya hingga tumbuh 5 helai daun (sekitar 5 minggu) sebelum dipindahkan 
         ke tanah yang telah dibajak, diberi kapur, serta pupuk kandang. Penanaman dilakukan dalam dua baris di bedengan dengan jarak antar-tanaman yang teratur. Pemeliharaan mencakup pemupukan susulan berkala (2 minggu dan 3 bulan pascatanam), 
@@ -137,7 +137,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Pangan",
         "umur_panen": "60-80 hari",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya kacang hijau diawali dengan penyiapan lahan gembur berdrainase baik serta perlakuan benih menggunakan bakteri Rhizobium atau insektisida. 
         Penanaman dilakukan secara tugal (2–4 biji per lubang) dengan jarak tanam yang disesuaikan musim. Pemeliharaan meliputi pemupukan susulan, penyulaman benih rusak, penyiangan gulma, 
@@ -170,7 +170,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Hortikultura",
         "umur_panen": "70-90 hari",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya cabai diawali dengan pemilihan benih hibrida unggul dan penyemaian selama 21–28 hari hingga bibit siap tanam. Bibit kemudian dipindahkan ke bedengan yang 
         diberi mulsa plastik untuk menekan gulma, lalu dirawat melalui pemupukan berkala sesuai fase pertumbuhan serta pengendalian hama (seperti thrips) dan penyakit (seperti busuk pangkal batang).
@@ -202,7 +202,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Hortikultura",
         "umur_panen": "3,5-4 bulan",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya kacang panjang diawali dengan olah tanah, pembuatan bedengan bermulsa, aplikasi dolomit serta pupuk dasar, dan pemasangan lanjaran bambu sebagai rambatan. 
         Benih berkualitas ditanam langsung sebanyak 2 biji per lubang dengan jarak tanam 40 x 60 cm. Pemeliharaan rutin mencakup penyiangan gulma serta pengendalian hama utama seperti ulat dan 
@@ -234,7 +234,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Pangan",
         "umur_panen": "90-120 hari",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya ubi jalar diawali dengan pemilihan stek batang berkualitas dan penyiapan tanah gembur bermulsa atau berkombinasi kompos yang dibuat guludan. 
         Bibit ditanam secara miring pada lubang tanam dan dirawat melalui penyiraman teratur, penyiangan, pembumbunan, serta pemupukan NPK. Ubi jalar siap dipanen pada umur 3–5 bulan 
@@ -266,7 +266,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Perkebunan",
         "umur_panen": "6-7 tahun",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya kemiri dimulai dengan menyemai benih yang disterilkan selama 6–12 bulan, lalu menanamnya di lubang berpupuk kandang pada awal musim hujan. 
         Perawatan rutin meliputi penyiraman, penyiangan, pemangkasan cabang tua, serta penyemprotan pembasmi hama agar tanaman tumbuh subur.
@@ -297,7 +297,7 @@ TANAMAN_DATA = {
         """,
         "jenis_tanaman": "Pangan",
         "umur_panen": "3-4 bulan",
-        "potensi_hasil": "-",
+        "produktivitas_tanaman": "-",
         "cara_budidaya": """
         Budidaya sorgum diawali dengan penyemaian benih dan pengolahan tanah hingga gembur.
         Benih ditanam menggunakan alat tugal dengan jarak ideal, lalu dirawat melalui penyiraman seperlunya, penyiangan, pembumbunan, 

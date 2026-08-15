@@ -1,5 +1,5 @@
 # from ..data import TANAMAN_DATA
-from ..crop_models import Crop
+from ..models.crop_models import Crop
 from .reason import generate_reason
 from .confidence import get_confidence
 

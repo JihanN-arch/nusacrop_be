@@ -1,8 +1,8 @@
 # from ..data import TANAMAN_DATA
-from ..crop_models import Crop
+from ..models.crop_models import Crop
 from ..utils.confidence import get_confidence
 from ..utils.reason import generate_reason
-from ..riwayat_models import RiwayatRekomendasi
+from ..models.riwayat_models import RiwayatRekomendasi
 
 def get_crop_detail(rekomendasi_id):
     try:
@@ -19,7 +19,7 @@ def get_crop_detail(rekomendasi_id):
         "deskripsi": tanaman.deskripsi,
         "jenis_tanaman": tanaman.jenis_tanaman,
         "umur_panen": tanaman.umur_panen,
-        "potensi_hasil": tanaman.potensi_hasil,
+        "produktivitas_tanaman": tanaman.produktivitas_tanaman,
         "cara_budidaya": tanaman.cara_budidaya,
         "manfaat": tanaman.manfaat,
         "syarat_tumbuh": tanaman.syarat_tumbuh

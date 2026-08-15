@@ -10,8 +10,6 @@ class RiwayatPencarian(models.Model):
     lat = models.FloatField()
     lon = models.FloatField()
 
-    luas_lahan = models.FloatField(null=True,blank=True)
-
     musim_target = models.CharField(max_length=50,null=True,blank=True)
 
     curah_hujan = models.FloatField(null=True,blank=True)

@@ -1,8 +1,8 @@
 from ..ml.ml_model import predict
 from ..utils.formatter import format_recommendation
 from .environment_service import get_environment
-from ..riwayat_models import RiwayatPencarian, RiwayatRekomendasi
-from ..crop_models import Crop
+from ..models.riwayat_models import RiwayatPencarian, RiwayatRekomendasi
+from ..models.crop_models import Crop
 
 def get_recommendation(data, anonymous_id):
 
@@ -29,9 +29,9 @@ def get_recommendation(data, anonymous_id):
     #ini di snapshot untuk riwayat
     riwayat = RiwayatPencarian.objects.create(
         anonymous_id=anonymous_id,
+        nama_lokasi = data.get("nama_lokasi"),
         lat=data["lat"],
         lon=data["lon"],
-        luas_lahan=data.get("luas_lahan"),
         musim_target=data.get("musim_target"),
         curah_hujan=kondisi_lahan["curah_hujan"],
         ph_tanah=kondisi_lahan["ph_tanah"],

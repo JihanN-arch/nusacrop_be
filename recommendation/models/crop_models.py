@@ -13,7 +13,7 @@ class Crop(models.Model):
 
     umur_panen = models.CharField(max_length=100)
 
-    potensi_hasil = models.CharField(max_length=100)
+    produktivitas_tanaman = models.CharField(max_length=100)
 
     manfaat = models.TextField()
 

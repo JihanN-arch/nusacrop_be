@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
-from ...crop_models import Crop
-from recommendation.data import TANAMAN_DATA
+from ...models.crop_models import Crop
+from recommendation.models.data import TANAMAN_DATA
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
@@ -13,7 +13,7 @@ class Command(BaseCommand):
                     "deskripsi": crop["deskripsi"],
                     "jenis_tanaman": crop["jenis_tanaman"],
                     "umur_panen": crop["umur_panen"],
-                    "potensi_hasil": crop["potensi_hasil"],
+                    "produktivitas_tanaman": crop["produktivitas_tanaman"],
                     "cara_budidaya": crop["cara_budidaya"],
                     "manfaat": crop["manfaat"],
                     "syarat_tumbuh": crop["syarat_tumbuh"]
