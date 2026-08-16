@@ -30,7 +30,7 @@ class RiwayatRekomendasiSerializer(serializers.ModelSerializer):
     class Meta:
         model = RiwayatRekomendasi
         fields = [
-            'id', 'nama_tanaman', 'nama_latin',
+            'id', 'nama_tanaman', 'nama_latin', 'jenis_tanaman',
             'kesuburan_ideal', 'ph_ideal', 'elevasi_ideal',
             'skor_kesesuaian', 'ranking',
         ]

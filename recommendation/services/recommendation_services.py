@@ -50,6 +50,7 @@ def get_recommendation(data, anonymous_id):
         rek = RiwayatRekomendasi.objects.create(
             riwayat=riwayat,
             crop=crop,
+            jenis_tanaman = item["jenis_tanaman"],
             skor_kesesuaian=item["skor_kesesuaian"],
             ranking=i,
             tingkat_kepercayaan=item["tingkat_kepercayaan"],

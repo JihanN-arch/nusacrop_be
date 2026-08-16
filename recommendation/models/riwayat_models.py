@@ -49,6 +49,8 @@ class RiwayatRekomendasi(models.Model):
         Crop,
         on_delete=models.PROTECT
     )
+    
+    jenis_tanaman = models.CharField(max_length=100, null=True, blank=True)
 
     skor_kesesuaian = models.FloatField()
 
